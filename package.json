@@ -15,6 +15,7 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@svgr/webpack": "^6.3.1",
+    "cross-env": "^10.1.0",
     "esbuild": "^0.15.2",
     "eslint": "^8.21.0",
     "eslint-config-next": "^12.2.5",
@@ -47,7 +48,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o build/",
+    "build": "next build && next export -o \"D:/React Portfolio/Github IO PORTFOLIO/deploy-porftolio-page\"",
     "build:storybook": "build-storybook -o build-storybook && node scripts/draco-storybook",
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
