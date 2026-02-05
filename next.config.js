@@ -33,6 +33,10 @@ module.exports = {
       test: /\.glsl$/,
       type: 'asset/source',
     });
+    
+    const nextConfig = {
+      basePath: isProd ? 'el-beshuele-portfolio'
+    }
 
     return config;
   },
