@@ -1,20 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // === ВАЖНО: НАСТРОЙКИ ДЛЯ GitHub Pages ===
-  // Базовый путь. Должен совпадать с именем репозитория на GitHub Pages.
-  basePath: '/deploy-porftolio-page',
-  // Режим статического экспорта для хостинга на GitHub Pages.
-  output: 'export',
-  // Отключаем оптимизацию картинок Next.js, т.к. она требует серверной части.
-  images: {
-    unoptimized: true,
-  },
-
-  // === СУЩЕСТВУЮЩИЕ НАСТРОЙКИ ИЗ ВАШЕГО ФАЙЛА ===
+module.exports = {
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
-
   webpack(config, { isServer }) {
     // Run custom scripts
     if (isServer) {
@@ -50,5 +37,3 @@ const nextConfig = {
     return config;
   },
 };
-
-module.exports = nextConfig;
