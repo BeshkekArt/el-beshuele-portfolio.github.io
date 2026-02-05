@@ -1,4 +1,5 @@
 module.exports = {
+  basePath: '/el-beshuele-portfolio.github.io',
   reactStrictMode: true,
   trailingSlash: true,
   pageExtensions: ['page.js', 'api.js'],
